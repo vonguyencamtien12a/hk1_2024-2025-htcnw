@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <!--
+   New Perspectives on HTML and XHTML 5th Edition
+   Tutorial 2
+   Case Problem 3
+
+   Diamond Health Club Home Page
+   Author:
+   Date:
+
+   Filename:         home.htm
+   Supporting files: diamond.jpg
+-->
+
+    <title>Diamond Health Club of Seattle</title>
     <style>
         {
             box-sizing: border-box;
@@ -14,30 +24,42 @@
         div {
             margin-top: 20px;
             margin-left: 300px;
-            width: 780px;
-            height: 385px;
+            width: 890px;
+            height: 390px;
             border: 2px solid black;
-            padding-left: 8px;
+            padding-left: 5px;
         }
     </style>
+
 </head>
 
 <body>
     <div>
-        <img src="img/fiddler.jpg">
-        <hr width="99%" align="left">
-        <p><span style="color:brown">Thanks to everyone who made Fiddler on the Roof Jr. such a smashing success!</span> After all of the hard work on rehearsals and set building and promotion, it really paid off. I have gotten so many comments on your wonderful
-            performances.
+        <img src="diamond.jpg" height="150" width="548" alt=“ Diamond” usemap=“ #diamondmap”>
+        <map id=“ diamondmap” name=“ diamond map”>
+         <area shape = “rect” coords = “225,7, 333,40” href = “classes.html”
+         alt= “Classes” title= “View our classes”>
+         <area shape = “rect” coords = “258,44, 437,82” href = “member.html” alt= 
+         “Member Ships” title= “View our classes”>
+         <area shape = “default” coords = “0, 0, x, y” href = “index.html”
+         alt= “Home Page” title= “Return to the Home page”>
+         </map>
+        <hr>
+        <h1>We've Moved!</h1>
+        <p>The Diamond Health Club Web site has moved. You will be redirected within a few seconds to the new site. Please update your links and bookmarks.
         </p>
-        <p>
-            I've started putting up a <a href="slide1.html">slide show</a> of the production. Please feel free to download the files from the Web site. If you want high resolution photos on a photo CD, please contact me.
-        </p>
-        <p>
-            Once again: <span style="color:brown"><i>BRAVO!!!</i></span> -- Mrs. Juroszek
-        </p>
-        <hr width="99%" align="left">
-    </div>
+        <p>If you are not redirected, please click this link to our new Web site.</p>
 
+        <hr />
+        <b>Diamond Health Club &#9830;
+       4317 Alvin Way &#9830;
+       Boise, ID 83701 &#9830;
+       (208) 555-4398</b>
+        <br />
+        <i>
+         Your Year-Round Source for Fun Family Health
+      </i>
+    </div>
 </body>
 
 </html>
