@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapbook Layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrapper{
+            font-family: 'Times New Roman', Times, serif;
+            width: 1089px;
+            height: auto;
+            box-sizing: border-box;
+            padding-right: 20px;
+            border: 1px solid rgba(169, 169, 169, 0.532);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            text-align: right;
+            border-bottom: 2px solid #FF9900;
+        }
+        .container {
+            display: flex;
+            box-sizing: border-box;
+        }
+        /* Left sidebar */
+        .sidebar {
+            background-color: #F0E5C9;
+            width: 20%;
+            padding: 15px;
+            font-size: 18px;
+            border-right: 1px solid #C4C4C4;
+            background-image: url(../img/back.jpg);
+            background-size: contain;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            border-bottom:2px dashed #FF9900;
+        }
+        .sidebar ul li a{
+            text-decoration: none;
+            color: rgb(129, 10, 123);
+        }
+        /* Main content */
+        .main-content {
+            width: 80%;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content h2 {
+            color: #FF9900;
+            padding: 20px 0px;
+        }
+        .image-container {
+            text-align: left;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Floating text boxes */
+        .float-box-left {
+            position: absolute;
+            top: 60%;
+            left: 28%;
+            width: 180px;
+            background-color: beige;
+            border: 4px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: rgb(204, 50, 50);
+            border-style: inset;
+        }
+
+        .float-box-right {
+            position: absolute;
+            top: 20%;
+            right: 30%;
+            width: 150px;
+            background-color: beige;
+            border: 4px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: rgb(204, 50, 50);
+            border-style: inset;
+        }
+        .float-box-bottom{
+            position: absolute;
+            top: 90%;
+            right: 32%;
+            width: 180px;
+            background-color: beige;
+            border: 4px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            color: rgb(204, 50, 50);
+            border-style: inset;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #FF9900;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: #F8F8F8;
+            border-top: 2px solid #FF9900;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/scraps.jpg" alt="">
+        </header>
+        <div class="container">
+            <!-- Left Sidebar -->
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Getting Started</a></li>
+                    <li><a href="#">Scrapbooking Tips</a></li>
+                    <li><a href="#">Supply List</a></li>
+                    <li><a href="#">Online Classes</a></li>
+                    <li><a href="#">Sample Pages</a></li>
+                    <li><a href="#">Online Store</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <h2>Samples from Online Scrapbooks</h2>
+                <div class="content">
+                    <div class="image-container">
+                        <img src="../img/sample.jpg" alt="Scrapbook Image">
+                    </div>
+    
+                    <div class="float-box-left">
+                        <p>This tutorial will get you started with CSS in just a few hours. It is easy to understand and it will teach you all the sophisticated techniques.</p>
+                    </div>
+    
+                    <div class="float-box-right">
+                        <p>Cascading Style Sheets (CSS) is a fantastic tool to add layout to your websites. It can save you a lot of time and it enables you to design websites in a completely new way.</p>
+                    </div>
+                    <div class="float-box-bottom">
+                        <p>Learning CSS is fun. As you go along through the tutorial, remember to take enough time to properly experiment with what you learn in each lesson.</p>
+                    </div>
+                </div>
+        <footer>
+            <p>Online Scrapbooks · 212 Sunset Drive · Richmond, KY 40475 · (859) 555-8100</p>
+        </footer>
+            </div>
+        </div>
+
+    </div>  
+</body>
+</html>

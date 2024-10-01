@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoko's Kitchen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            display: flex;
+            background-color: #999999;
+            padding: 20px;
+            align-items: center;
+            background-image: url(../img/background.png);
+        }
+        .content-header{
+            float: left;
+            gap: 0;
+        }
+        .content-header h1, .content-header h3{
+            text-transform: uppercase;
+        }
+        .content-header h3{
+            margin-top: -10px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        header h1 {
+            font-size: 30px;
+            color: #ffffff;
+        }
+        nav {
+            background-color: #666666;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .right {
+            width: 20%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .left{
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .content-course, .course-img, .course-img-1{
+            width: 50%;
+        }
+        .course-img{
+            padding: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.482);
+        }
+        .course img {
+            width: 100%;
+            height: auto;
+        }
+        .course h2 {
+            color: #666666;
+            margin-top: 10px;
+            display: grid;
+        }
+        .course .content-course .highlight{
+            margin-top: -15px;
+        }
+        .course .highlight {
+
+            color: #f24786;
+        }
+        .popular-recipes {
+            margin-bottom: 20px;
+        }
+        .popular-recipes h3, .contact h3 {
+            color: #f24786;
+        }
+        .popular-recipes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .popular-recipes ul li {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(163, 163, 163, 0.368);
+        }
+        .popular-recipes ul li a {
+            color: #f24786;
+            text-decoration: none;
+        }
+        .contact p {
+            margin: 0;
+        }
+        footer {
+            background-color: #999999;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 12px;
+            background-image: url(../img/background.png);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="logo" width="150px">
+        <div class="content-header">
+            <h1>Yoko's Kitchen</h1>
+            <h3>Japanese Cooking Classes</h3>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="left">
+            <div class="course">
+                <div class="course-img">
+                    <img src="../img/bok choi.png" alt="Bok Choi">
+                    <figcaption>Bok choi</figcaption>
+                </div>
+                <div class="content-course">
+                    <h2>Japanese Vegetarian </h2>
+                    <h3 class="highlight">Five week course in London</h3>
+                    <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+                </div>
+                
+            </div>
+            <div class="course">
+                <div class="course-img">
+                    <img src="../img/teriyaki.jpg" alt="Teriyaki Sauce">
+                    <figcaption>Teriyaki Sauce</figcaption>
+                </div>
+                <div class="content-course">
+                    <h2>Sauces Masterclass</h2>
+                    <h3 class="highlight">One day workshop</h3>
+                    <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right">
+            <div class="popular-recipes">
+                <h3>Popular Recipes</h3>
+                <ul>
+                    <li><a href="#">Yakitori (grilled chicken)</a></li>
+                    <li><a href="#">Tsukune (minced chicken patties)</a></li>
+                    <li><a href="#">Okonomiyaki (savory pancakes)</a></li>
+                    <li><a href="#">Mizutaki (chicken stew)</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>Yoko's Kitchen</p>
+                <p>27 Redchurch Street</p>
+                <p>Shoreditch</p>
+                <p>London E2 7DP</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        © 2024 Yoko's Kitchen 
+    </footer>    
+
+</body>
+</html>

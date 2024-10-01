@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background.jpg);
+
+}
+.wrapper{
+    width: 1089px;
+    box-sizing: border-box;
+}
+.content{
+    display: flex;
+    gap: 20px;
+}
+aside{
+    width:20% ;
+    padding: 10px;
+    background-color: white;
+    height: fit-content;
+    box-shadow: 0px 5px 5px 10px rgba(75, 75, 75, 0.6);
+}
+aside ul li{
+    padding: 10px 0px;
+    
+}
+aside ul li a{
+    color: blueviolet;
+    text-decoration: none;
+}
+aside ul li a:hover{
+    color: blue;
+}
+main{
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    border-left: 1px solid green;
+}
+.welcome{
+    margin: 0;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px 10px;
+    background-color: green;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-transform:capitalize;
+}
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+.p{
+    width: 70%;
+    margin: 0;
+}
+.img{
+    width: 30%;
+    margin: 0;
+}
+.p p, .main-content-p p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.content-h3 {
+    margin: 0;
+    background: green;
+    padding:5px 10px;
+    color: white;
+    width: 50%;
+}
+.content-h3 h3 {
+    font-size: 15px;
+}
+.content-ul {
+    padding-top:20px; 
+    margin-left: 20px;
+}
+.content-ul li{
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+footer{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-top: 5px double green;
+}
+/* trang index */
+#index{
+    text-align: center;
+}
