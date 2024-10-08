@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 03</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 960px;
+            height: auto;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid black;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            height: 80px;
+            background-color: #AC4B16;
+            justify-content: left;
+        }
+        header h1{
+            color: rgb(20, 176, 20);
+            margin: 0;
+            margin-left: 20px;
+            text-shadow: -5px -5px 5px white;
+
+        }
+        nav{
+            height: fit-content;
+            width: 100%;
+            padding: 10px 0;
+            background-color: white;
+            box-shadow: 0px 5px 5px black;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+        nav ul li a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #AC4B16;
+            font-weight: 500;
+        }
+        .bottom-header{
+            height: 150px;
+            background-image: url(../img/background.png);
+            background-repeat: repeat-x;
+            background-size: cover;
+        }
+        .content{
+            display: flex;
+            box-sizing: border-box;
+            padding: 50px 10px;
+            gap: 30px;
+            padding-bottom: 0;
+        }
+        main{
+            width: 70%;
+            padding: 10px 70px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            border-right: 1px solid #ccc;
+        }
+        main h2{
+            text-align: left;
+            color: #AC4B16;
+            margin: 0;
+            margin-left: -40px;
+        }
+        main p {
+            line-height: 25px;
+            font-size: 18px;
+            font-style: italic;
+            text-align: justify;
+            color: #808000;
+        }
+        .signup-form input {
+            font-size: 16px;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 0;
+            background-color: transparent;
+            border-bottom: 2px solid #ccc;
+        }
+        .signup-form button {
+            background-color: #666600;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        aside{
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        aside h2{
+            color: #AC4B16;
+        }
+        .aside-link{
+            background-color: #FAEBD7;
+            padding: 0px 20px;
+            border-radius: 20px 20px 0 0;
+            box-sizing: border-box;
+        }
+        .aside-link ul {
+            list-style-type:square;
+            padding: 0;
+            color: #cc6600;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+        .aside-link ul li {
+            margin-bottom: 5px;
+        }
+        .aside-link ul li a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: #cc6600;
+        }
+        .aside-moreinfo{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .aside-moreinfo h2{
+            padding-bottom: 20px;
+        }
+        .aside-moreinfo img{
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            float: left;
+        }
+        .aside-moreinfo p{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(61, 61, 61);
+            line-height: 20px;
+        }
+        footer{
+            height: fit-content;
+            width: 100%;
+            background-image: url(../img/footer.png);
+            background-repeat: repeat-x;
+            /* background-size: cover; */
+        }
+        footer p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </nav>
+        <div class="bottom-header">
+
+        </div>
+        <div class="content">
+            <main>
+                <h2>Sign up for membership benefits</h2>
+                <p>Our philisophical are transparency, respect, formality and responsibility. Our stimulus is your enthusiasm.Our motto is your satisfation. </p>
+                <form class="signup-form">
+                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Retype password" required>
+                    <button type="submit">SIGN ME UP</button>
+                </form>
+            </main>
+            <aside>
+                <div class="aside-link">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="#">Make your Own Tour</a></li>
+                        <li><a href="#">Maldives Tours</a></li>
+                        <li><a href="#">Nature & Adventure</a></li>
+                        <li><a href="#">Readymade Tours</a></li>
+                        <li><a href="#">Europe Tours</a></li>
+                        <li><a href="#">Russia Tours</a></li>
+                    </ul>
+                </div>
+                <div class="aside-moreinfo">
+                    <h2>More info</h2>
+                    <p><img src="../img/leaf.png" alt="leaf" width="80px">Our purpose is the client who gives us the opportunity to serve and make known the reality around the world.</p>
+                </div>
+            </aside>
+        </div>
+        <footer><p>&copy; 2017 Software Engineering Department | Test Date 16 Sep 2017
+        </p></footer>
+ 
+    </div>
+</body>
+</html>

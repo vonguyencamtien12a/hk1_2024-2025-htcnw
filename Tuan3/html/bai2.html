@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 02</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .wrapper{
+        width: 960px;
+        height: 700px;
+        box-sizing: border-box;
+        background-color: aliceblue;
+        border: 1px solid black;
+    }
+    header{
+        background-color: #294E79;
+        position: relative;
+        height: 150px;
+        width: 100%;
+    }
+    header img{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    header .ph{
+        position: absolute;
+        top: 50px;
+        left: 120px;
+        color: white;
+    }
+    header h1{
+        position: absolute;
+        top: 20px;
+        left: 120px;
+        color: white;
+    }
+    header #frm1{
+        position: absolute;
+        top: 10px;
+        right: 30px;
+
+    }
+    nav{
+        position: absolute;
+        bottom: 0;
+        left: 400px;
+    }
+    .menu li{
+        display: inline-table;
+        background-color: #688eb9;
+        height: 50px;
+        line-height: 50px;
+        margin: 2px;
+        padding: 0 10px;
+    }
+    .menu li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+    }
+    .menu li:hover{
+        background-color: azure;
+    }
+    .menu li:hover>a{
+        color: blue;
+    }
+    .content{
+        background-color: white;
+        width: 100%;
+        gap: 30px;
+    }
+   
+    .content{
+        display:flex;
+        padding: 50px 10px;
+        box-sizing: border-box;
+    }
+    .content h2{
+        font-weight: 400;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed;
+        color: gray;
+    }
+    .content p{
+        font-family: roboto, sans-serif
+    }
+    section{
+        width: 70%;
+    }
+    .content-main{
+        display: flex;
+        box-sizing: border-box;
+        padding: 15px 0px;
+        gap: 30px;
+    }
+    .content-form{
+        width: 60%;
+        box-sizing: border-box;
+    }
+    .content-form p{
+        font-style: italic;
+        color: red;
+        font-weight: 500;
+        text-shadow: 5px 5px 7px green;
+        text-align: justify;
+    }
+    .content-form{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    form#frm {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .content-form .main-form{
+        width: 50%;
+        padding-right: calc(13px / 2);
+        padding-left: calc(13px / 2);
+        margin-bottom: 13px;
+    }
+    .content-form .main-form-tex {
+        width: 100%;
+        padding-right: calc(13px / 2);
+        padding-left: calc(13px / 2);
+        margin-bottom: 13px;
+    }
+    textarea#message {
+        width: 100%;
+    }
+    .btn {
+        padding: 0;
+        margin: 0;
+        padding-left: calc(13px / 2);
+    }
+    .content-form input, .content-form textarea, .content-form button{
+        border-radius: 0;
+        border:1px solid #dae0e7;
+        background-color:azure ;
+    }
+    .content-form label, .content-form button{
+        color: gray;
+    }
+    .content-p{
+        width: 40%;
+        box-sizing: border-box;
+    }
+    .content-p ul{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: gray;
+    }
+    aside{
+        width: 30%;
+        padding: 30px;
+        background: #dae0e7;
+        height: fit-content;
+        box-sizing: border-box;
+    }
+    aside img{
+        margin: 20px 0;
+        padding: 5px;
+        border: 1px solid grey;
+    }
+    aside figcaption{
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: gray;
+    }
+    aside p, a{
+        font-size: 18px;
+        font-weight: bold;
+        text-align: right;
+        text-decoration: none;
+    } 
+    footer{
+        background-color: #294E79;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+    footer p{
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+    footer .p-xanh{
+        color: #688eb9;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/flower.png" alt="" height="100" width="80">
+            <h1>FlowerBox 360</h1>
+            <p class="ph">...to get your daily close of luxury roses!</p>
+            <form action="" method="get" id="frm1">
+                <input type="search" name="txtS" id="txtS" placeholder="Search the site..." style="background-color: rgb(4, 4, 110); color: aliceblue; border-color: rgb(15, 130, 231);">
+                <button type="submit" style="background-color: rgb(4, 4, 110); color: aliceblue; border-color: rgb(15, 130, 231);">GO</button>
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Gift Baskets</a></li>
+                    <li><a href="#">Flowers Services </a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section>
+                <h2>Why Not Contact Us Today!</h1>
+                <div class="content-main">
+                    <div class="content-form">
+                        <p>For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the highest
+                            quality flowers found on online, but thatt you can do so at a great value.</p>
+                            <form action="" method="get" id="frm">
+                                <div class="main-form">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div class="main-form">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div class="main-form">
+                                    <label for="tel">Telephone</label>
+                                    <input type="tel" name="tel" id="tel">
+                                </div>
+                                <div class="main-form">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" name="text" id="text">
+                                </div>
+                                <div class="main-form-tex">
+                                    <label for="text">Message</label>
+                                    <textarea name="message" id="message" rows="4"></textarea>
+                                </div>
+
+                                <div class="btn">
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="content-p">
+                        <h2>FlowerBox 360 Info!</h2>
+                        <ul>
+                            <li>Openationg Hours:</li>
+                            <li>Monday-Friday:9:000am-5:00pm</li>
+                            <li>Saturday:9:00am-1.00pm.</li>
+                            <li>Sunday:CLosed (No Deliveries)</li>
+                            <li>ORDER ONLINE 24/7</li>
+                        </ul>
+                        <ul>
+                            <li>Software Engineering Dept.</li>
+                            <li>Information Technology Faculty</li>
+                            <li>First Floor, H Building</li>
+                        </ul>
+                        <ul>
+                            <li>12 Nguyen Van Bao, Ward 4,</li>
+                            <li>Go Vap District</li>
+                            <li>Ho Chi Minh City</li>
+                            <li>Tel: 0283.8940 390</li>
+                            <li>Fax: 0283.9940 954</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <h2>Discounts & Specials</h2>
+                <img src="../img/rose.png" alt="rose" width="225px">
+                <figcaption>
+                    FlowerBox 360 offers many great discounts throught the year, 
+from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderfull troppps!
+                </figcaption>
+                <p><a href="#"> Read More </a></p>
+            </aside>
+        </div>
+        <footer><p>Copyright 2017 - All Right Reseved - <span class="p-xanh">Software Engineering Department - Industrial University of Ho Chi Minh City</span></p></footer>
+    </div>
+</body>
+</html>

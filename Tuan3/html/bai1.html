@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a2d0e8;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #87ceeb;
+            border-bottom: 2px dotted white;
+            padding: 10px;
+            position: relative;
+            text-align: right;
+        }
+
+        .header h2 {
+            color: white;
+            margin: 0;
+            font-size: 36px;
+            text-shadow: 1px 1px 20px #010dd8, 5px 5px 20px black;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .menu li a:hover {
+            color: black;
+        }
+
+        .slide {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .slide-left {
+            width: 50%;
+        }
+
+        .slide-left h1 {
+            color: #003366;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .slide-left p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .form-slide {
+            background-color: #d0e9f5;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #87ceeb;
+        }
+
+        .form-slide table {
+            width: 100%;
+        }
+
+        .form-slide table td {
+            padding: 10px 0;
+        }
+
+        .form-slide label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .form-slide input,
+        .form-slide select,
+        .form-slide textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-slide button {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .form-slide button:hover {
+            background-color: #003366;
+        }
+
+        .slide-bar {
+            width: 45%;
+            text-align: center;
+        }
+
+        .slide-bar img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .slide-bar h1 {
+            color: #010dd8;
+text-shadow: 3px 3px 2px #010dd8;
+            margin-top: 20px;
+        }
+
+        .slide-bar h3 {
+            color: #010dd8;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #87ceeb;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            border-top: 2px dotted white;
+        }
+
+        .footer address {
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h2>Sky World</h2>
+        </div>
+
+        <div class="slide">
+            <div class="slide-left">
+                <div class="heading-slide">
+                    <h1 class="slide-heading">Registration Information</h1>
+                    <p>Start your travel planning now with our on-line tour registration form. Just tell us a little
+                        about yourself and your group and one of our travel experts will contact you to create the
+                        perfect custom built tour for your group's needs.</p>
+                </div>
+
+                <div class="form-slide">
+                    <table>
+                        <tr>
+                            <td><label for="">Title</label></td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">Mr</option>
+                                    <option value="">Ms</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Full Name * </label></td>
+                            <td><input type="text" placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Mailing Address</label></td>
+                            <td><input type="text" placeholder="Mailing Address"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">City</label></td>
+                            <td><input type="text" placeholder="City"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Country</label></td>
+                            <td><input type="text" placeholder="Country"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Specific questions or requests about your tour</label></td>
+                            <td><textarea placeholder="Specific questions or requests about your tour"></textarea></td>
+                        </tr>
+<tr>
+                            <td></td>
+                            <td><button>Submit</button> <button>Reset</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="slide-bar">
+                <img src="../img/sky.png"
+                    alt="Sky Image">
+                <h1>Your've arrived.</h1>
+                <h3>Journeys as great as the destinations.</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <address>&copy;2016 Sky World Tours. All rights reserved.</address>
+            <address>Contact information: Student Name | StudentID | Testing Date: 16 Sept 2016</address>
+        </div>
+    </div>
+</body>
+
+</html>
